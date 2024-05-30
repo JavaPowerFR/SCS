@@ -456,7 +456,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "SCS_Interface_Lte.net",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
