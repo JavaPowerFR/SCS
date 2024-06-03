@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1aJrkMqyMembncAqs/z3re8RyH6ZER8qRjQYj2fngXdMBujLbuuDllG7WxQw5rrcJL4mnGKdZ1qfgoDBz+OV2A==",
+  "dgSpecHash": "/sXhkp1+rFBWsugFUvQsyVCUh3kIrqMXfOXRLjYORR+LS7ljTKhObU79zzcXaTNW3dhL0Bx4TDorii1IvBdYcQ==",
   "success": true,
-  "projectFilePath": "F:\\Users\\Cyril\\Documents\\Projets\\SCS Interface\\Software\\Decryptor Application\\VisualStudio\\ScsDecoder\\ScsDecoder.csproj",
+  "projectFilePath": "C:\\Users\\Cyril\\source\\repos\\ScsDecoder\\ScsDecoder\\ScsDecoder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cyril\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm.runtime.native.system.io.ports.8.0.0.nupkg.sha512",
     "C:\\Users\\Cyril\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\8.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.8.0.0.nupkg.sha512",

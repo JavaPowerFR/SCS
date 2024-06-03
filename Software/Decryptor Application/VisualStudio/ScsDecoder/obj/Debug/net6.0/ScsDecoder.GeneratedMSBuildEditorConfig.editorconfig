@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ScsDecoder
-build_property.ProjectDir = F:\Users\Cyril\Documents\Projets\SCS Interface\Software\Decryptor Application\VisualStudio\ScsDecoder\
+build_property.ProjectDir = C:\Users\Cyril\source\repos\ScsDecoder\ScsDecoder\

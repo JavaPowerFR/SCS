@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.SymbolStore;
 using System.IO.Ports;
+using static ScsDecoder.Utils;
 
 namespace ScsDecoder
 {
@@ -66,13 +67,6 @@ namespace ScsDecoder
                     }
                 //}
             }
-        }
-
-        public static void ConsoleWrite(ConsoleColor color, string msg)
-        {
-            ConsoleColor old = Console.ForegroundColor = color;
-            Console.Write(msg);
-            Console.ForegroundColor = old;
         }
 
         public static bool isSameBuffer(byte[] a, byte[] b)
@@ -159,7 +153,41 @@ namespace ScsDecoder
 
         private static void ReciveCommand(byte cmd)
         {
+            if(cmd == 0x01)
+            {
+                ConsoleWrite(ConsoleColor.DarkMagenta, "SEND AVALEBLES !\n");
+            }
+        }
 
+        public static void SendData(byte[] _buffer, int rep)
+        {
+            byte[] sendBuffer = new byte[_buffer.Length+2];
+            
+            sendBuffer[0] = (byte)_buffer.Length;
+            sendBuffer[1] = (byte)rep;
+
+            for (int i = 0; i < _buffer.Length; i++)
+            {
+                sendBuffer[i + 2] = _buffer[i];
+            }
+            port.Write(sendBuffer, 0, sendBuffer.Length);
+        }
+
+        public static byte[] WrapPacketA8A3(byte[] _buffer)
+        {
+            byte[] sendBuffer = new byte[_buffer.Length + 3];
+
+            sendBuffer[sendBuffer.Length - 2] = 0;
+            sendBuffer[0] = 0xA8;
+            sendBuffer[sendBuffer.Length - 1] = 0xA3;
+
+            for (int i = 0; i < _buffer.Length; i++)
+            {
+                sendBuffer[i + 1] = _buffer[i];
+                sendBuffer[sendBuffer.Length - 2] ^= _buffer[i];
+            }
+
+            return sendBuffer;
         }
 
         public static void Run()

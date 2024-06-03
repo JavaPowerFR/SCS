@@ -238,11 +238,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Users\\Cyril\\Documents\\Projets\\SCS Interface\\Software\\Decryptor Application\\VisualStudio\\ScsDecoder\\ScsDecoder.csproj",
+      "projectUniqueName": "C:\\Users\\Cyril\\source\\repos\\ScsDecoder\\ScsDecoder\\ScsDecoder.csproj",
       "projectName": "ScsDecoder",
-      "projectPath": "F:\\Users\\Cyril\\Documents\\Projets\\SCS Interface\\Software\\Decryptor Application\\VisualStudio\\ScsDecoder\\ScsDecoder.csproj",
+      "projectPath": "C:\\Users\\Cyril\\source\\repos\\ScsDecoder\\ScsDecoder\\ScsDecoder.csproj",
       "packagesPath": "C:\\Users\\Cyril\\.nuget\\packages\\",
-      "outputPath": "F:\\Users\\Cyril\\Documents\\Projets\\SCS Interface\\Software\\Decryptor Application\\VisualStudio\\ScsDecoder\\obj\\",
+      "outputPath": "C:\\Users\\Cyril\\source\\repos\\ScsDecoder\\ScsDecoder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cyril\\AppData\\Roaming\\NuGet\\NuGet.Config",
